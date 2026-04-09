@@ -11,15 +11,28 @@
 
 <body>
     <div class="header">
-        <div class="header-button" style="font-size: medium;"><b>TigerTaxi</b></div>
-        <div class="header-button" style="background-color: #6574d4;"><b>Ny Bokning</b></div>
-        <div class="header-button"><b>Pågående bokningar</b></div>
-        <div class="header-button"><b>Fordon</b></div>
+        <div class="header-button" style="font-size: medium;">
+            <p><b>TigerTaxi</b></p>
+        </div>
+        <div class="header-button" style="background-color: #6574d4;">
+            <p><b>Ny Bokning</b></p>
+        </div>
+        <div class="header-button">
+            <p><b>Pågående bokningar</b></p>
+        </div>
+        <div class="header-button">
+            <p><b>Fordon</b></p>
+        </div>
+        <div class="header-button">
+            <p>Axel Axelsson</p>
+            <p class="small-text">Logga ut</p>
+        </div>
+
     </div>
     <div class="main">
         <div class="booking-interface">
             <form action="">
-                <p><b>Ny bokning</b></p>
+                <p style="font-size: large;"><b>Ny bokning</b></p>
                 <div class="forms">
                     <div class="form-1">
                         <label><b>Namn*</b> <br><input type="text" name="" id=""
@@ -27,7 +40,8 @@
                         <label><b>Upphämtning*</b> <br><input type="text" name="" id=""
                                 placeholder="Göteborg Centralstation"></label>
                         <br>
-                        <label><b>Destination*</b> <br><input type="text" name="" id=""placeholder="Landvetter Flygplats"></label>
+                        <label><b>Destination*</b> <br><input type="text" name="" id=""
+                                placeholder="Landvetter Flygplats"></label>
                         <div class="checkboxes">
                             <label><input type="checkbox" name="" id=""><b>Rullstol</b></label>
                             <label><input type="checkbox" name="" id=""><b>Husdjur</b></label>
@@ -38,9 +52,12 @@
                         </div>
                     </div>
                     <div class="form-1">
-                        <label><b>Telefonnummer*</b> <br><input type="text" name="" id="" placeholder="012 345 67 89"></label><br>
-                        <label><b>Mellanstopp</b> <br><input type="text" name="" id="" placeholder="Ange address..." style="font-style:italic"></label><br>
-                        <label><b>Önskemål/Övrig information</b> <br><textarea name="" id="" placeholder="Jag vill gärna ha..."></textarea></label>
+                        <label><b>Telefonnummer*</b> <br><input type="text" name="" id=""
+                                placeholder="012 345 67 89"></label><br>
+                        <label><b>Mellanstopp</b> <br><input type="text" name="" id="" placeholder="Ange address..."
+                                style="font-style:italic"></label><br>
+                        <label><b>Önskemål/Övrig information</b> <br><textarea name="" id=""
+                                placeholder="Jag vill gärna ha..."></textarea></label>
                     </div>
                     <div class="form-2">
                         <label><b>Antal passagerare*</b> <br>
@@ -50,6 +67,9 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
+                                <option value="1">6</option>
+                                <option value="2">7</option>
+                                <option value="3">8</option>
                             </select>
                         </label><br>
                         <button class="add-stop">+ mellanstopp</button>
@@ -66,15 +86,182 @@
                         </label><br>
                     </div>
                 </div>
+                <p><b>Föreslagna bilar</b></p>
                 <div class="driver-select">
+                    
+                    <div class="card">
+                        <div class="left">
+                            <div class="vehicle-id">TXI 057</div>
 
+                            <div class="content">
+                                <div class="top-row">
+                                    <span>Olof Olofsson</span>
+                                    <span>Est. tid till upphämtning: 0h 3min</span>
+                                </div>
+
+                                <div class="meta">
+                                    <span>Minivan</span>
+                                    <span>Start 09:00</span>
+                                    <span>Paus 13:30</span>
+                                    <span>Slut 17:00</span>
+                                </div>
+
+                                <div class="tags">
+                                    <span class="tag blue">8 platser</span>
+                                    <span class="tag">Rullstol</span>
+                                    <span class="tag">Bilbarnstol</span>
+                                    <span class="tag">Babyskydd</span>
+                                    <span class="tag">Husdjur</span>
+                                    <span class="tag blue">Stort bagage</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="status">Tillgänglig</div>
+                            <button class="btn">Tilldela</button>
+                        </div>
                     </div>
-                    <button>Avbryt</button>
-                    <button>Bekräfta bokning</button>
+                    <div class="card">
+                        <div class="left">
+                            <div class="vehicle-id">TXI 081</div>
+
+                            <div class="content">
+                                <div class="top-row">
+                                    <span>Nils Nilsson</span>
+                                    <span>Est. tid till upphämtning: 0h 6min</span>
+                                </div>
+
+                                <div class="meta">
+                                    <span>Minivan</span>
+                                    <span>Start 08:00</span>
+                                    <span>Paus 12:30</span>
+                                    <span>Slut 16:00</span>
+                                </div>
+
+                                <div class="tags">
+                                    <span class="tag blue">7 platser</span>
+                                    <span class="tag">Rullstol</span>
+                                    <span class="tag blue">Bilbarnstol</span>
+                                    <span class="tag">Babyskydd</span>
+                                    <span class="tag">Husdjur</span>
+                                    <span class="tag blue">Stort bagage</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="status">Tillgänglig</div>
+                            <button class="btn">Tilldela</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="left">
+                            <div class="vehicle-id">TXI 081</div>
+
+                            <div class="content">
+                                <div class="top-row">
+                                    <span>Harald Haraldson</span>
+                                    <span>Est. tid till upphämtning: 0h 6min</span>
+                                </div>
+
+                                <div class="meta">
+                                    <span>Minivan</span>
+                                    <span>Start 10:00</span>
+                                    <span>Paus 14:30</span>
+                                    <span>Slut 18:00</span>
+                                </div>
+
+                                <div class="tags">
+                                    <span class="tag blue">8 platser</span>
+                                    <span class="tag blue">Rullstol</span>
+                                    <span class="tag">Bilbarnstol</span>
+                                    <span class="tag">Babyskydd</span>
+                                    <span class="tag">Husdjur</span>
+                                    <span class="tag blue">Stort bagage</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="status">Tillgänglig</div>
+                            <button class="btn">Tilldela</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="left">
+                            <div class="vehicle-id">TXI 081</div>
+
+                            <div class="content">
+                                <div class="top-row">
+                                    <span>Andrea Andreasson</span>
+                                    <span>Est. tid till upphämtning: 0h 7min</span>
+                                </div>
+
+                                <div class="meta">
+                                    <span>Minivan</span>
+                                    <span>Start 05:30</span>
+                                    <span>Paus 10:00</span>
+                                    <span>Slut 13:30</span>
+                                </div>
+
+                                <div class="tags">
+                                    <span class="tag blue">7 platser</span>
+                                    <span class="tag">Rullstol</span>
+                                    <span class="tag blue">Bilbarnstol</span>
+                                    <span class="tag blue">Babyskydd</span>
+                                    <span class="tag">Husdjur</span>
+                                    <span class="tag blue">Stort bagage</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="status">Tillgänglig</div>
+                            <button class="btn">Tilldela</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="left">
+                            <div class="vehicle-id">TXI 057</div>
+
+                            <div class="content">
+                                <div class="top-row">
+                                    <span>Erika Eriksson</span>
+                                    <span>Est. tid till upphämtning: 0h 3min</span>
+                                </div>
+
+                                <div class="meta">
+                                    <span>Sedan</span>
+                                    <span>Start 09:00</span>
+                                    <span>Paus 13:30</span>
+                                    <span>Slut 17:00</span>
+                                </div>
+
+                                <div class="tags">
+                                    <span class="tag blue">8 platser</span>
+                                    <span class="tag">Rullstol</span>
+                                    <span class="tag">Bilbarnstol</span>
+                                    <span class="tag">Babyskydd</span>
+                                    <span class="tag">Husdjur</span>
+                                    <span class="tag blue">Stort bagage</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="status">Tillgänglig</div>
+                            <button class="btn">Tilldela</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button>Avbryt</button>
+                <button>Bekräfta bokning</button>
             </form>
         </div>
         <div class="map">
-            <img src="map.png" alt="map-pic" height="710px">
+            <img src="map.png" alt="map-pic">
         </div>
     </div>
 </body>
