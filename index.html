@@ -262,7 +262,7 @@
 
                 <div class="last-btns">
                     <button class="btn">Avbryt</button>
-                    <button class="btn-filled">Bekräfta bokning</button>
+                    <button type="button" class="btn-filled" onclick="openPopup()">Bekräfta bokning</button>
                 </div>
             </form>
         </div>
@@ -273,6 +273,49 @@
                 <input type="text" placeholder="🔍 Sök taxi eller adress..." />
             </div>
         </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="confirmation-popup" id="confirmation-popup">
+        <div class="confirmation-header">
+            <img src="checkmark.png" alt="checkmark" height="50px">
+            <h1>Bokning bekräftad</h1>
+            <p>BK-1042 | 2026-04-07 | 09:49</p>
+        </div>
+        <div class="confirmation-info">
+            <div class="info-item">
+                <p><b>Kund</b></p>
+                <p>Anders Andersson</p>
+                <p class="greyed-text">012 345 67 89</p>
+            </div>
+            <div class="info-item">
+                <p><b>Taxi</b></p>
+                <p>TXI 081 </p>
+                <p class="greyed-text">Nils Nilsson</p>
+            </div>
+            <div class="info-item">
+                <p><b>Passagerare</b></p>
+                <p>4</p>
+            </div>
+            <div class="info-item">
+                <p><b>Från</b></p>
+                <p>Göteborg Centralstation</p>
+            </div>
+            <div class="info-item">
+                <p><b>Till</b></p>
+                <p>Landvetter flygplats</p>
+            </div>
+        </div>
+        <br>
+        <div class="misc-info">
+            <p><b>Önskemål/Övrig information:</b></p>
+            <p>Bilbarnstol, Stort baggage</p>
+            <p class="greyed-text">Behöver två bilbarnstolar samt hjälp med baggage</p>
+        </div>
+        <br>
+        <button type="submit" class="btn-filled" onclick="closePopup()">OK</button>
+        <br><br>
     </div>
 </body>
 

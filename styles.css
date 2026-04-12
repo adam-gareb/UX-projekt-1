@@ -1,7 +1,8 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body {
@@ -18,6 +19,8 @@ body {
     background-color: #30396e;
     height: 7vh;
     color: white;
+    position: relative;
+    z-index: 100;
 }
 
 .header-button {
@@ -43,7 +46,7 @@ body {
 
 }
 
-.checkboxes{
+.checkboxes {
     font-size: 11px;
 }
 
@@ -72,13 +75,13 @@ body {
     align-items: flex-start;
 }
 
-.form-header{
+.form-header {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.form-header p:nth-child(2) { 
+.form-header p:nth-child(2) {
     margin-top: 18px;
 }
 
@@ -111,7 +114,8 @@ select {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center; /* keeps crop centered */
+    object-position: center;
+    /* keeps crop centered */
 }
 
 #map {
@@ -125,8 +129,7 @@ select {
     top: 60px;
     left: 75px;
     width: 80%;
-    /* max-width: 500px; */
-    z-index: 1000; /* 👈 makes it sit above map */
+    z-index: 50;
 }
 
 .map-search input {
@@ -176,7 +179,7 @@ input[type='text'] {
 }
 
 a {
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
@@ -185,7 +188,7 @@ a {
 /* Förarkort */
 
 
-.driver-select{
+.driver-select {
     display: flex;
     flex-direction: column;
     max-height: 43vh;
@@ -205,7 +208,7 @@ a {
     gap: 10px;
 }
 
-.driver-name{
+.driver-name {
     font-size: medium;
     font-weight: bold;
 }
@@ -294,7 +297,7 @@ a {
     text-align: center;
 }
 
-.wish{
+.wish {
     background-color: #cdd3ee;
     color: #454d70;
     max-width: 270px;
@@ -302,7 +305,7 @@ a {
     border-radius: 5px;
 }
 
-.wish p{
+.wish p {
     margin: 0;
 }
 
@@ -326,20 +329,87 @@ a {
     cursor: pointer;
 }
 
-.last-btns{
+.last-btns {
     display: flex;
     justify-content: right;
     margin-top: 20px;
     gap: 10px;
 }
 
-.vehicle-search{
+.vehicle-search {
     display: flex;
     gap: 20px;
     width: 30%;
     margin-bottom: 10px;
 }
 
-.vehicle-search select{
+.vehicle-search select {
     height: 25px;
+}
+
+
+/* overlay */
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+
+/* confirmation-popup */
+
+.confirmation-popup {
+    z-index: 100;
+    visibility: hidden;
+    background-color: white;
+    position: relative;
+    left: 600px;
+    bottom: 780px;
+    border: 2px solid black;
+    width: 800px;
+    padding-top: 15px;
+    padding-left: 40px;
+}
+
+.confirmation-popup .btn-filled {
+    display: block;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.confirmation-header {
+    text-align: center;
+}
+
+.confirmation-container img {
+    width: 20px;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.confirmation-container h1 {
+    margin-top: 0;
+}
+
+.confirmation-container {}
+
+.confirmation-info {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.info-item {
+    width: 300px;
+}
+
+.greyed-text {
+    color: #818181;
 }
