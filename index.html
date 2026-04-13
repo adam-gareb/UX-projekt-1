@@ -14,21 +14,25 @@
         <div class="header-button">
             <p><b>TigerTaxi</b></p>
         </div>
+
         <div class="header-button" style="background-color: #6574d4;">
-            <p><a href="index.html"><b>Ny Bokning</b></p></a>
+            <p><a href="index.html"><b>Ny Bokning</b></a></p>
         </div>
+
         <div class="header-button">
             <p><a href="ongoing-bookings.html"><b>Pågående bokningar</b></a></p>
         </div>
+
         <div class="header-button">
             <p><a href="vehicles.html"><b>Fordon</b></a></p>
         </div>
+
         <div class="header-button">
             <p>Axel Axelsson</p>
-            <p class="small-text">Logga ut</p>
+            <p style="font-size: 10px">Logga ut</p>
         </div>
-
     </div>
+
     <div class="main">
         <div class="booking-interface">
             <form>
@@ -36,32 +40,35 @@
                     <p style="font-size: x-large;"><b>Ny bokning</b></p>
                     <p><b>09:49</b></p>
                 </div>
+
                 <div class="forms">
                     <div class="form-1">
-                        <label><b>Namn*</b> <br><input type="text" name="" id=""
+                        <label><b>Namn*</b> <br><input type="text"
                                 placeholder="Anders Andersson"></label><br>
-                        <label><b>Upphämtning*</b> <br><input type="text" name="" id=""
+                        <label><b>Upphämtning*</b> <br><input type="text"
                                 placeholder="Göteborg Centralstation"></label>
                         <br>
-                        <label><b>Destination*</b> <br><input type="text" name="" id=""
+                        <label><b>Destination*</b> <br><input type="text"
                                 placeholder="Landvetter Flygplats"></label>
                         <div class="checkboxes">
-                            <label><input type="checkbox" name="" id=""><b>Rullstol</b></label>
-                            <label><input type="checkbox" name="" id=""><b>Husdjur</b></label>
-                            <label><input type="checkbox" name="" id=""><b>Bilbarnstol</b></label>
-                            <label><input type="checkbox" name="" id=""><b>Stort baggage</b></label>
-                            <label><input type="checkbox" name="" id=""><b>Babyskydd</b></label>
-                            <label><input type="checkbox" name="" id=""><b>Ensamresande barn</b></label>
+                            <label><input type="checkbox"><b>Rullstol</b></label>
+                            <label><input type="checkbox"><b>Husdjur</b></label>
+                            <label><input type="checkbox"><b>Bilbarnstol</b></label>
+                            <label><input type="checkbox"><b>Stort baggage</b></label>
+                            <label><input type="checkbox"><b>Babyskydd</b></label>
+                            <label><input type="checkbox"><b>Ensamresande barn</b></label>
                         </div>
                     </div>
+
                     <div class="form-1">
-                        <label><b>Telefonnummer*</b> <br><input type="text" name="" id=""
+                        <label><b>Telefonnummer*</b> <br><input type="text"
                                 placeholder="012 345 67 89"></label><br>
-                        <label><b>Mellanstopp</b> <br><input type="text" name="" id="" placeholder="Ange address..."
+                        <label><b>Mellanstopp</b> <br><input type="text" placeholder="Ange address..."
                                 style="font-style:italic"></label><br>
-                        <label><b>Önskemål/Övrig information</b> <br><textarea name="" id=""
+                        <label><b>Önskemål/Övrig information</b> <br><textarea
                                 placeholder="Jag vill gärna ha..."></textarea></label>
                     </div>
+
                     <div class="form-2">
                         <label><b style="position: relative; right: 3px;">Antal passagerare*</b> <br>
                             <select name="antal-passagerare">
@@ -77,9 +84,10 @@
                         </label><br>
                         <button class="add-stop">+ mellanstopp</button>
                     </div>
+
                     <div class="form-2">
                         <label><b>Fordonstyp</b> <br>
-                            <select name="fordonstyp" id="">
+                            <select name="fordonstyp">
                                 <option value="minivan">Minivan</option>
                                 <option value="suv">SUV</option>
                                 <option value="skapbil">Skåpbil</option>
@@ -87,7 +95,10 @@
                                 <option value="pansarvagn">Pansarvagn!!!</option>
                             </select>
                         </label>
-                        <img src="questionmark.png" alt="question-mark" height="14px" style="margin-left: 20px;">
+                    </div>
+
+                    <div class="form2">
+                        <img src="questionmark.png" alt="question-mark" height="18" style="margin-top: 17px; margin-left: -15px; cursor: pointer;">
                     </div>
                 </div>
                 <p style="font-size: x-large;"><b>Föreslagna bilar</b></p>
@@ -204,7 +215,7 @@
                                 <div class="meta">
                                     <span>Minivan</span>
                                     <span>Start 05:30</span>
-                                    <span style="color: red;">Paus 10:00</span><img src="alert.png" height="12px"
+                                    <span style="color: red;">Paus 10:00</span><img src="alert.png" alt="alert" height="12"
                                         style="position: relative; right: 8px; top: 3px;">
                                     <span>Slut 13:30</span>
                                 </div>
@@ -259,10 +270,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="last-btns">
-                    <button class="btn">Avbryt</button>
-                    <button type="button" class="btn-filled" onclick="openPopup()">Bekräfta bokning</button>
+                    <button class="btn" style="font-size: medium;">Avbryt</button>
+                    <button type="button" class="btn-filled" onclick="openPopup()" style="font-size: medium;">Bekräfta bokning</button>
                 </div>
             </form>
         </div>
@@ -279,29 +289,34 @@
     
     <div class="confirmation-popup" id="confirmation-popup">
         <div class="confirmation-header">
-            <img src="checkmark.png" alt="checkmark" height="50px">
+            <img src="checkmark.png" alt="checkmark" height="50">
             <h1>Bokning bekräftad</h1>
             <p>BK-1042 | 2026-04-07 | 09:49</p>
         </div>
+
         <div class="confirmation-info">
             <div class="info-item">
                 <p><b>Kund</b></p>
                 <p>Anders Andersson</p>
                 <p class="greyed-text">012 345 67 89</p>
             </div>
+
             <div class="info-item">
                 <p><b>Taxi</b></p>
                 <p>TXI 081 </p>
                 <p class="greyed-text">Nils Nilsson</p>
             </div>
+
             <div class="info-item">
                 <p><b>Passagerare</b></p>
                 <p>4</p>
             </div>
+
             <div class="info-item">
                 <p><b>Från</b></p>
                 <p>Göteborg Centralstation</p>
             </div>
+
             <div class="info-item">
                 <p><b>Till</b></p>
                 <p>Landvetter flygplats</p>
